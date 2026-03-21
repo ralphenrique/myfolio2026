@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+}
+
+:root,
+[data-theme='light'] {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #ffffff;
+  --border: #717171;
+  --outline-marker:#08060d;
+  --grid-line: rgba(148, 163, 184, 0.28);
+  --code-bg: #f4f3ec;
+  --accent: #111111;
+  --accent-bg: rgba(8, 6, 13, 0.08);
+  --accent-border: rgba(8, 6, 13, 0.25);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --text: #9ca3af;
+  --text-h: #f3f4f6;
+  --bg: #0e0e0e;
+  --border: #53555f;
+  --outline-marker:#ffffff;
+  --grid-line: rgba(148, 163, 184, 0.12);
+  --code-bg: #1f2028;
+  --accent: #f5f4f0;
+  --accent-bg: rgba(245, 244, 240, 0.12);
+  --accent-border: rgba(245, 244, 240, 0.35);
+  --social-bg: rgba(47, 48, 58, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  --color-scheme: dark;
+}
+
+@layer base {
+  body {
+    @apply m-0 bg-[var(--bg)] font-[var(--sans)] text-[16px] leading-[1.45] tracking-[0.18px] text-[var(--text)] antialiased lg:text-[18px];
+    color-scheme: var(--color-scheme, light);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  * {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
