@@ -374,7 +374,7 @@ function App() {
               className="flex min-h-[20vh] flex-col text-start justify-between  border-[var(--border)] p-5"
             >
               <div>
-                <h3 className="m-0 text-basefont-semibold text-[var(--text-h)]">About Me</h3>
+                <h3 className="m-0 text-base font-semibold text-[var(--text-h)]">About Me</h3>
                 <p className="mt-3 text-sm leading-6 text-[var(--text)]">
                   I am an aspiring Full-Stack Developer dedicated to building web and mobile solutions using React, Vue, and PHP. I work on projects including helping businesses scale through digital transformation, creating modern applications that streamline operations and empower clients to thrive in a digital-first world.
                 </p>
@@ -392,13 +392,10 @@ function App() {
 
             <section
               data-section-id="experience"
-              className="flex min-h-[50vh] text-start flex-col justify-between border-[var(--border)] p-5"
+              className="flex min-h-[50vh] text-start flex-col border-[var(--border)] p-5"
             >
               <div>
                 <h3 className="m-0 text-base font-semibold text-[var(--text-h)]">Experience</h3>
-                <p className="mt-3 text-sm leading-6 text-[var(--text)]">
-                  Roles across fintech, dev tooling, and product studios—each focused on shipping measurable outcomes.
-                </p>
               </div>
 
               <div className="relative mt-5 space-y-5 text-left">
